@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Store</title>
+
+  <!-- ✅ SEO Metadata -->
+  <meta name="description" content="Toko akun Free Fire Sultan, Menengah, dan Pemula termurah dan terpercaya. Bisa langsung beli via WhatsApp.">
+  <meta name="keywords" content="Jual akun FF, Akun Sultan, Akun Free Fire murah, toko akun FF">
+  <meta name="author" content="Store FF Keren">
+  
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background: linear-gradient(135deg, #1f1c2c, #928dab);
+      color: #fff;
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 40px 20px;
+      opacity: 0;
+      animation: fadePage 1s ease forwards;
+    }
+
+    @keyframes fadePage {
+      to { opacity: 1; }
+    }
+
+    .container {
+      max-width: 1000px;
+      text-align: center;
+    }
+
+    h1 {
+      font-size: 36px;
+      margin-bottom: 10px;
+    }
+
+    .sub {
+      font-size: 16px;
+      margin-bottom: 30px;
+      color: #ddd;
+    }
+
+    .account-list {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px;
+    }
+
+    .account-card {
+      background: rgba(255, 255, 255, 0.08);
+      backdrop-filter: blur(8px);
+      border-radius: 12px;
+      padding: 20px;
+      width: 270px;
+      box-shadow: 0 6px 16px rgba(0,0,0,0.3);
+      transition: transform 0.3s ease;
+      position: relative;
+    }
+
+    .account-card:hover {
+      transform: translateY(-6px);
+    }
+
+    .account-card img {
+      width: 100%;
+      height: 150px;
+      object-fit: cover;
+      border-radius: 8px;
+      margin-bottom: 15px;
+      cursor: pointer;
+      transition: transform 0.3s ease;
+    }
+
+    .account-card h2 {
+      font-size: 20px;
+      margin-bottom: 5px;
+    }
+
+    .account-card p {
+      font-size: 14px;
+      margin-bottom: 10px;
+    }
+
+    .price {
+      display: block;
+      font-size: 18px;
+      font-weight: bold;
+      color: #ffeb3b;
+      margin-bottom: 12px;
+    }
+
+    button {
+      background: #ff4081;
+      border: none;
+      padding: 10px 16px;
+      color: white;
+      font-weight: bold;
+      border-radius: 6px;
+      cursor: pointer;
+      transition: background 0.2s ease;
+    }
+
+    button:hover {
+      background: #f50057;
+    }
+
+    .fade-in {
+      opacity: 0;
+      transform: translateY(20px);
+      animation: fadeInUp 0.8s forwards;
+    }
+
+    .delay-1 { animation-delay: 0.2s; }
+    .delay-2 { animation-delay: 0.4s; }
+    .delay-3 { animation-delay: 0.6s; }
+
+    @keyframes fadeInUp {
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    @media (max-width: 768px) {
+      .account-card {
+        width: 100%;
+        max-width: 300px;
+      }
+    }
+
+    /* Overlay Zoom */
+    .overlay {
+      position: fixed;
+      top: 0; left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(0, 0, 0, 0.9);
+      display: none;
+      justify-content: center;
+      align-items: center;
+      z-index: 999;
+    }
+
+    .overlay img {
+      max-width: 90%;
+      max-height: 90%;
+      border-radius: 12px;
+      box-shadow: 0 0 30px rgba(255, 255, 255, 0.2);
+    }
+
+    .overlay.active {
+      display: flex;
+    }
+
+    .close-btn {
+      position: absolute;
+      top: 20px;
+      right: 30px;
+      font-size: 32px;
+      color: #fff;
+      cursor: pointer;
+      z-index: 1001;
+      transition: 0.3s;
+    }
+
+    .close-btn:hover {
+      color: #ff4081;
+    }
+
+    /* ✅ Testimoni */
+    .testimoni {
+      margin-top: 40px;
+      font-style: italic;
+      color: #ccc;
+      font-size: 14px;
+    }
+    .testi-btn {
+  display: inline-block;
+  margin: 30px auto;
+  background: #00c853;
+  color: white;
+  padding: 12px 20px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: 0.3s;
+  animation: fadeInUp 1s ease;
+}
+
+.testi-btn:hover {
+  background: #00b342;
+}
+
+    /* ✅ WA floating button */
+    .wa-float {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      background: #25D366;
+      color: white;
+      padding: 12px 18px;
+      border-radius: 50px;
+      text-decoration: none;
+      font-weight: bold;
+      font-size: 14px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+      z-index: 1000;
+    }
+
+    .wa-float:hover {
+      background: #1ebe5d;
+    }
+  </style>
+</head>
+<body>
+  <div class="container fade-in">
+    <h1>Store Akun Free Fire</h1>
+    <p class="sub">Jb(jual beli ff) di jamin scam</p>
+
+    <div class="account-list">
+      <div class="account-card fade-in delay-1">
+        <img src="1.jpg" alt="Akun Sultan" onclick="showZoom(this.src)">
+        <h2>Akun kecek</h2>
+        <p>Bekas Akun Aura Lemon</p>
+        <span class="price">Rp 100.000.000.000</span>
+        <button onclick="orderWA('Akun kecek')">Beli Sekarang</button>
+      </div>
+
+      <div class="account-card fade-in delay-2">
+        <img src="2.jpg" alt="Akun Menengah" onclick="showZoom(this.src)">
+        <h2>Akun Kecil</h2>
+        <p>Bekas akun teguh cilik</p>
+        <span class="price">Rp 900.000</span>
+        <button onclick="orderWA('Akun teguh cilik')">Beli Sekarang</button>
+      </div>
+
+      <div class="account-card fade-in delay-3">
+        <img src="3.jpg" alt="Akun Pemula" onclick="showZoom(this.src)">
+        <h2>Akun dylan pros</h2>
+        <p>Testi?Wa me</p>
+        <span class="price">Rp900.900.900</span>
+        <button onclick="orderWA('Akun dylan pros')">Beli Sekarang</button>
+      </div>
+    </div>
+
+    <!-- ✅ Testimoni -->
+    <div class="testimoni">
+      <p>“AKUNNYA BAGUS BANGET IHH,KALAU BELI DAPAT JANDA” – <strong>RIZKY RACING</strong></strong>
+<a href="Testimo.html" class="testi-btn">Testimo?</a>
+    </div>
+  </div>
+
+  <!-- Overlay Zoom -->
+  <div class="overlay" id="zoomOverlay" onclick="hideZoom()">
+    <span class="close-btn" onclick="hideZoom()">&#10005;</span>
+    <img id="zoomImage" src="" alt="Zoomed Akun">
+  </div>
+
+  <!-- ✅ Tombol WA Mengambang -->
+  <a href="https://wa.me/6285860598990" target="_blank" class="wa-float">Chat Admin</a>
+
+  <script>
+    function showZoom(src) {
+      document.getElementById("zoomImage").src = src;
+      document.getElementById("zoomOverlay").classList.add("active");
+    }
+
+    function hideZoom() {
+      document.getElementById("zoomOverlay").classList.remove("active");
+    }
+
+    function orderWA(namaAkun) {
+      const noWa = "6285860598990"; // Ganti nomor WA kamu
+      const pesan = `IKII ADMIN JUDOL MAU BELI AKUN FF`;
+      const url = `https://wa.me/${noWa}?text=${encodeURIComponent(pesan)}`;
+      window.open(url, "_blank");
+    }
+  </script>
+</body>
+</html>
